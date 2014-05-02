@@ -11,7 +11,9 @@ title: Artem Popov's blog
         <p>
            {{ post.content }} 
         </p>
+        <a href="{{ post.url }}#disqus_thread">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
 </div>
+{% include discuss-footer.html %}
